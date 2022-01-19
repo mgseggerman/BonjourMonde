@@ -1,0 +1,19 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. BonjourMonde.
+
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 GORKOMATIC PIC X(10).
+
+       01 A-TABLE.
+          05  A-FIELD PIC X(10) VALUE "GORKOMATIC".
+
+       PROCEDURE DIVISION.
+           MOVE A-FIELD TO GORKOMATIC.
+           DISPLAY GORKOMATIC.
+           GOBACK.
+           
+       END PROGRAM BonjourMonde.
